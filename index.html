@@ -3,51 +3,91 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-witdth, initial-scale=1.0">
-        <title> Portifólio mateus</title>
+        <title> Portifólio Mateus</title>
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body> 
-<!-- Cabeçalho com nome e título profissional -->
-     <header>
-        <h1> Toledo </h1>
-        <p> quem sou Eu </p>
-     </header>
+    <body>
+
+        <header>
+            <h1> Mateus Toledo </h1>
+        </header>
      
      <nav>
         <ul>
             <li><a href="#sobre">Sobre Mim </a></li>
             <li><a href="#projetos"> Projetos </a></li>
-            <li><a href="#contatos"> Contatos </a></li>
+            <li><a href="#contato"> Contato </a></li>
         </ul>
      </nav>
 
      <main>
         <section id="Sobre"> 
             <h2> Sobre Mim </h2>
-            <p> Escreva breve descrição </p>
+            <img src="images/foto-perfil.jpg.jpg" alt="Foto de Mateus Toledo" class="foto-perfil">
+            <p>Sou Mateus Toledo, graduando em Análise e Desenvolvimento de Sistemas na FATEC São José dos Campos, e estou em busca de oportunidades para aplicar meus conhecimentos e crescer profissionalmente na área de tecnologia. Desde cedo, tenho me desafiado a aprender novas habilidades, e atualmente foco nas linguagens HTML, CSS e Python, que me permitem criar soluções práticas e funcionais. </p>
         </section>
+
         <section id="projetos">
             <h2> Meus projetos</h2>
-            <article class="projetos">
-                <h3> exemplos </h3>
-                <p> Descrição do projeto</p>
-                <a href="#"> Ver projetos </a>
-            </article>
+           <div class="project-list">
+            <article class="projeto-card">
+                <h3> SCRUM 360</h3>
+                <p> O Scrum360 tem como objetivo: Ensinar o que são metodologias ágeis, organizar e estruturar as informações sobre Scrum, avaliar o conhecimento da metodologia Scrum, desenvolver as habilidades técnicas do usuário. </p>
+                <a href="https://github.com/davihelisson/FATEC-API-Under_Devs"> Ver Projeto</a>
+            </article> 
+            </div>
+            <div class="project-list">
+                <article class="projeto-card">
+                    <h3> FATEC Scrum</h3>
+                    <p> Seguindo a solicitação do nosso cliente desenvolvemos uma aplicação web, onde o objetivo principal é que as pessoas que a usem consigam entender e aplicar a metodologia ágil, em mais especifico o Scrum, seja no meio acadêmico dentro da fatec ou profissional em qualquer empresa que tenha o objetivo de atualizar seu processo de produção.</p>
+                    <a href="https://github.com/gubasssss/ThothTech/tree/main"> Ver projeto</a>
+                </article>
+            </div>       
+        </section>
+
+        <section id="Certificados">
+            <h2>Certificados</h2>
+            <table>
+                <thead>56
+                    <tr>
+                        <th>Nome</th>
+                        <th>Data</th>
+                        <th>Instituição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NDG Linux Unhatched</td>
+                        <td>2024</td>
+                        <td> Cisco Networking Academy </td>
+                    </tr>
+                    <tr>
+                        <td>Produção Cultural no Brasil</td>
+                        <td>2024</td>
+                        <td>EBAC (escola britanica de artes criativas e tecnologia)</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
      </main>
+
      <footer> 
         <section id="Contato">
-            <h2> Contato </h2>
-            <form>
+            <h2>Contato</h2>
+            <form id="contactForm">
                 <label for="Nome:"> Nome: </label>
                 <input type="text" id="Nome" name="nome" required>
                 
-                <label for="email"> Email</label>
+                <label for="email"> email</label>
                 <input type="email" id="email" name="email" required>
 
                 <label for="mensagem"> Mensagem </label>
                 <textarea id="mensagem" name=" mensagem" rows="4" required> </textarea>
+                <button type="submit"> Enviar </button>
             </form>
+            <p id="confirmationMessage" style="display: none; color: greenyellow; font-weight: bold;margin-top: 10px;">
+                Mensagem enviada, responderemos em breve.
+            </p>
         </section>
         <p>&copy; 2024 Mateus Toledo. Todos os direitos reservados</p>
      </footer>
